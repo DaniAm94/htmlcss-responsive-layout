@@ -7,10 +7,6 @@
 
 /* Generics */
 
-html {
-    /* font-size: 12px; */
-}
-
 body {
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
     background-color: hsl(40deg 14.29% 95.88%);
@@ -93,6 +89,10 @@ header {
     color: grey;
 }
 
+.head-line.row {
+    justify-content: space-between;
+}
+
 #recipe h2 {
     color: hsl(261.33deg 27.61% 31.96%);
     font-weight: 900;
@@ -116,7 +116,7 @@ header {
     content: "\f005";
 }
 
-#recipe .row {
+.generics .row {
     justify-content: space-between;
     align-items: center;
 }
@@ -140,6 +140,7 @@ header {
 
 .recipe-info .fa-ul {
     margin-left: 10px;
+    flex-direction: column;
 }
 
 .recipe-info li:not(:last-child) {
@@ -183,7 +184,7 @@ nav {
     padding: 20px 20px;
 }
 
-ul.row {
+#socials .row {
     justify-content: space-between;
 }
 
@@ -212,6 +213,13 @@ nav a {
 
 #youtube {
     color: hsl(8.57deg 68.85% 47.84%);
+}
+
+/* Adv Banner */
+.adv {
+    width: 100%;
+    display: none;
+    margin: 15px 0;
 }
 
 /* Showing Section */

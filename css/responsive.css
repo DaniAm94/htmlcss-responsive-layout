@@ -1,6 +1,54 @@
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 700px;
+        padding: 40px 0;
+    }
+
     header {
         text-align: left;
         padding-left: 20px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /* Recipe section */
+
+    #recipe h2::after {
+        content: '(Dolce Tradizionale)';
+    }
+
+    iframe {
+        width: 700px;
+        height: 394px;
+    }
+
+    .recipe-info .fa-ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .recipe-info li {
+        flex-basis: calc(100% / 3);
+    }
+
+    /* Socials nav-bar */
+    #socials a {
+        padding: 10px 50px;
+    }
+
+    /* ADV Banner */
+    .adv {
+        display: block;
+    }
+
+    /* Presentation */
+
+    #presentation figure {
+        float: left;
+        margin-right: 10px;
     }
 }
