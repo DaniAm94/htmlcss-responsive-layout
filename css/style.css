@@ -7,10 +7,130 @@
 
 /* Generics */
 
+html {
+    font-size: 12px;
+}
+
 body {
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    background-color: hsl(40deg 14.29% 95.88%);
 }
 
 h1 {
     font-family: 'Nerko One', cursive;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+section {
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utils */
+.border {
+    border: 2px dashed black;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: hsl(35.33deg 83.83% 53.92%);
+    background-color: white;
+}
+
+
+
+/* Main */
+
+/* Video Section */
+
+#recipe-section .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-info {
+    padding: 30px;
+    background-color: white;
+}
+
+.recipe-info>* {
+    border: 1px dashed red;
+}
+
+.video-player {
+    height: 400px;
+}
+
+.video-info {
+    background-color: hsl(255.27deg 22.82% 52.75%);
+}
+
+.generics {
+    background-color: hsl(255deg 25% 96.86%);
+}
+
+/* Socials Navbar */
+
+nav {
+    padding: 20px 20px;
+}
+
+ul.row {
+    justify-content: space-between;
+}
+
+nav a {
+    border: 1px dashed red;
+}
+
+/* Showing Section */
+
+#showing-section>* {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    background-color: dodgerblue;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(255.27deg 22.82% 52.75%);
+    color: white;
+    text-align: center;
+}
+
+footer .row {
+    justify-content: center;
+    column-gap: 10px;
+}
+
+footer a {
+    color: white;
 }
