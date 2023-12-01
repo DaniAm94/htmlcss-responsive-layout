@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome link -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
         integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=='
-        crossorigin='anonymous' />
+        crossorigin='anonymous'>
+
 
     <!-- Link CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -27,82 +29,94 @@
 
 <body>
     <header>
-        <h1>Giallo booleano</h1>
+        <h1 class="txt-up">Giallo booleano</h1>
     </header>
 
     <main>
         <div class="container">
-            <section id="recipe-section">
-                <div class="topic">Argomento</div>
-                <div class="row">
-                    <h2>Ricetta</h2>
+            <section id="recipe">
+                <div class="topic mb-10">DOLCI E DESSERTS</div>
+                <div class="row mb-20">
+                    <h2>Tiramisù</h2>
                     <div class="rate">
-                        <span class="rate-scale">x/5</span>
-                        <span class="rate-label">Rate</span>
+                        <span class="rate-scale"><b>4.6</b>/5</span>
+                        <span class="rate-label txt-up">Rate</span>
                     </div>
                 </div>
-                <div class="video border">
-                    <div class="video-player">Video</div>
-                    <div class="video-info">
-                        <h3>video title</h3>
-                        <span>description</span>
-                    </div>
+                <div class="video">
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/JVT900H6s0g?si=6_Q4E5Q8h9qcc6bQ"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="recipe-info border">
-                    <div class="generics">
-                        <div class="row">
-                            <span class="energy">554 Kcal</span>
-                            <span class="plus">+ info</span>
+                <div class="recipe-info">
+                    <div class="generics mb-20">
+                        <div class="row mb-10">
+                            <span class="energy bg-violet">554 Kcal</span>
+                            <a href="#" class="info-btn">+ info</a>
                         </div>
-                        <div class="type">food type</div>
+                        <div class="type txt-up">vegetariano</div>
                     </div>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fa-solid fa-blender"></i></span>Difficoltà: <b>Facile</b>
+                        </li>
+                        <li><span class="fa-li"><i class="fa-solid fa-clock"></i></span>Tempo: <b>40 min</b></li>
+                        <li><span class="fa-li"><i class="fa-solid fa-chart-pie"></i></span>Porzione per: <b>8
+                                persone</b></li>
+                        <li><span class="fa-li"><i class="fa-solid fa-euro"></i></span>Costo: <b>contenuto</b></li>
+                        <li><span class="fa-li"><i class="fa-solid fa-thumb-tack"></i></span><b>Note</b>: +2 ore di
+                            riposo
+                            in frigo</li>
+                    </ul>
 
-                    <div class="details">
-                        <div class="detail">1</div>
-                        <div class="detail">2</div>
-                        <div class="detail">3</div>
-                        <div class="detail">4</div>
-                        <div class="detail">5</div>
-                    </div>
                 </div>
             </section>
+
+            <!-- Barra socials -->
             <nav id="socials-bar">
                 <ul class="row">
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
-                    <li><a href="#">icon</a></li>
+                    <li><a href="#" id='facebook' class="fa-brands fa-facebook"></a></li>
+                    <li><a href="#" id="twitter" class="fa-brands fa-twitter"></a></li>
+                    <li><a href="#" id="instagram" class="fa-brands fa-instagram"></a></li>
+                    <li><a href="#" id="pinterest" class="fa-brands fa fa-pinterest"></a></li>
+                    <li><a href="#" id="youtube" class="fa-brands fa fa-youtube"></a></li>
                 </ul>
             </nav>
-            <section id="showing-section" class="border">
-                <h2>Presentation</h2>
-                <div class="styled-separator"></div>
-                <figure>
-                    <figure class="img">img</figure>
+
+            <!-- Sezione presentazione -->
+            <section id="presentation">
+                <h2 class="mb-20 txt-up">Presentation</h2>
+                <div class="styled-separator mb-20"></div>
+                <figure class="mb-20">
+                    <img src="img/tiramisu.jpg" alt="">
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam repellendus neque unde aliquid
+                <p class="mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam repellendus
+                    neque
+                    unde aliquid
                     perferendis ut inventore doloremque, mollitia rerum quaerat quo, debitis earum officiis at. Ab quos
                     alias ea!
-                    Provident vitae facere odio illo, voluptatem temporibus unde, maiores deleniti laudantium reiciendis
+                    <b>Provident vitae</b> facere odio illo, voluptatem temporibus unde, maiores deleniti laudantium
+                    reiciendis
                     quasi blanditiis officiis minus ad aliquam? Tempora dolorum natus voluptatibus! Aliquid itaque,
-                    sapiente molestias necessitatibus rerum sequi possimus.
-                    Perspiciatis tempora esse maxime possimus animi labore tenetur iste enim est, nisi eligendi nihil
+                    sapiente molestias <b>Tiramisù</b>necessitatibus rerum sequi possimus.
+                    Perspiciatis tempora esse maxime possimus animi <b>Best italian dessert</b>labore tenetur iste enim
+                    est, nisi eligendi nihil
                     illum beatae sed eius itaque expedita omnis sint eos inventore culpa doloribus facilis? Dolor,
-                    ratione dolores?</p>
+                    ratione dolores?
+                </p>
             </section>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-header"><b>&copy; 2021 Giallo Booleano S.p.a.</b></div>
-        <address>Via Tal dei tali, 10 - 88046 Lamezia Terme - VAT 43940293020</address>
+    <footer class="bg-violet">
+        <div class="footer-header mb-10"><b>&copy; 2021 Giallo Booleano S.p.a.</b></div>
+        <address class="mb-20">Via Tal dei tali, 10 - 88046 Lamezia Terme - VAT 43940293020</address>
         <ul class="row">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
         </ul>
     </footer>
 
